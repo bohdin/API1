@@ -23,7 +23,6 @@ def get_record_person_category(id, category):
     else:
         return jsonify({'message':'Person not found'})
 
-
 @app.route('/records/<int:id>', methods = ['GET'])
 def get_record_person(id):
     _records = []
